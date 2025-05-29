@@ -1,0 +1,211 @@
+ @import 'font.css';
+
+
+ *{
+    padding: 0;
+    margin: 0;
+}
+body {
+ margin: 0;
+ padding: 0;
+ background: url("{% static 'bg.jpg' %}") no-repeat center center fixed;
+ background-size: cover;
+ color: white;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section{
+    width: 100%;
+    height: 100%;
+ background-image: url('bg.jpg');
+ background-size: cover;
+ background-repeat: no-repeat;
+
+ }
+header{
+   width: 100%;
+   height: 1.sem;
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 10;
+   background: rgba(0, 0, 0, 0.5);
+}
+header nav{
+   height: 2.5.Sem;
+   margin-right: 2em;
+   display: flex;
+   justify-content: space-between;
+}
+
+.brand{
+   font-size: 2.3rem;
+   color: #fff;
+   font-family: jonesy;
+   text-decoration: none;
+   padding: 0 0 0 2rem;
+}
+
+.brand:hover{
+   color: #fff;
+
+}
+header nav ul{
+   list-style: none;
+   display: flex;
+}
+header nav ul li a{
+   display: block;
+   padding: 0.6em 1em;
+   text-decoration: none;
+   color: gray;
+   font-size: 1.3rem;
+   font-family: azonix;
+   transition: 0.3s color;
+
+}
+header nav ul li a:hover{
+   color: #fff;
+}
+.active{
+   color: #fff;
+}
+.content{
+   padding: 0 2em;
+   padding-top: 3.5em;
+   min-height: 50vh;
+   
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+}
+.main-form textarea{
+   width: 50%;
+   min-height: 10em;
+   background: rgba(0, 0, 0, 0.5);
+   border: 2px solid white;
+   border-radius: 0.5rem;
+   position: relative;
+   margin-bottom: 0,5em;
+   resize: vertical;
+   padding: 0.5em;
+   color: #fff;
+   font-family: system-ui;
+   font-size: 1.3rem;
+}
+.content h1{
+   color: #fff;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   margin: 0;
+   padding: 0;
+
+}
+.content p{
+   color: #fff;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+
+}
+.algo-choice{
+   width: 100%;
+   display: flex;
+   flex: 1;
+   gap: 50px;
+}
+
+.radioconatiner{
+   display: block;
+   position: relative;
+   padding-left: 35px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   font-size: 22px;
+   color: #fff;
+   -webkit-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
+.radioconatiner input{
+   position: absolute;
+   opacity: 0;
+   cursor: pointer;
+}
+
+.checkmarks{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 25px;
+   width: 25px;
+   background: #fff;
+   border-radius: 30%;
+}
+.radioconatiner:hover input ~.checkmarks{
+   background: #ccc;
+}
+.radioconatiner input:checked ~.checkmarks{
+   background: rgb(41, 38, 38);
+}
+.check-btn{
+   display: flex;
+   border: none;
+   border-radius: 0.3em;
+   background: #fff;
+   font-size: 1.5em ;
+   cursor: pointer;
+}
+.footer p{
+   font-size: 1.2em;
+   font-family: arial;
+   letter-spacing: 1px;
+}
+
+.answersection{
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.Answer{
+   font-size: 4rem;
+   font-weight: bold; 
+   margin-bottom: 30px;
+}
+.Backbtn{
+   padding: 12px 30px;
+   font-size: 1.5rem;
+   border: 2px solid white;
+   color: white;
+   background-color: transparent;
+   text-decoration: none;
+   border-radius: 10px;
+   transition: 0.3s ease;
+}
+.Backbtn:hover{
+   background-color: white;
+   color: black;
+        }
+@media only screen and(max-width: 768px ){
+.form-content{
+   padding-top: 0;
+}
+.main-form{
+   margin-bottom: 2em;
+}
+.typo-content{
+   padding-bottom: 0;
+}
+}@media only screen and(max-width: 450px){
+.header nav{
+   margin-right: 1em;
+   }
+.header nav ul li a{
+   font-size: 1rem;
+   padding: 1em 0.4em;
+}
+}

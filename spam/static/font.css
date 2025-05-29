@@ -1,0 +1,22 @@
+@font-face{
+    font-family: Azonix;
+    src: url('../ALL\ web\ pages\ for\ detectation/Azonix')
+ }
+
+ @font-face{
+    font-family: Centaur;
+    src: url('../ALL\ web\ pages\ for\ detectation/Centaur')
+ }
+
+ @font-face{
+    font-family: Jonesy Capitals;
+    src: url('../ALL\ web\ pages\ for\ detectation/Jonesy')
+ }
+ @font-face{
+    font-family: Robot; /*Light*/
+    src: url('../ALL\ web\ pages\ for\ detectation/Light')
+ }
+ @font-face{
+    font-family: Robot; /*Regular*/
+    src: url('../ALL\ web\ pages\ for\ detectation/pages')
+ }

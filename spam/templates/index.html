@@ -1,0 +1,89 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    {% load static %}
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+   <link rel="stylesheet" href="{% static 'style.css' %}">
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+   <link rel="stylesheet" href="{% static 'css/radio.css' %}">
+    <title>AI Tools | NLP</title>
+  </head>
+  <body>
+    
+    <section>
+        <!--Header part start-->
+        <header>
+            <nav>
+                <div><a href="#" class="brand"
+                >SPD</a> </div>
+                <ul>
+                    <li><a href="#" class="active">Web Desgin</a></li>
+                    <li><a href="#" class="active">Web AI</a></li>
+                </ul>
+            </nav>
+        </header>
+<!--Header part End-->
+
+<!--main part start-->
+<div class="fluid-container content">  
+    <div class="row-m-auto">
+        <!--Text part -->
+        <div class=" p-5 m-auto type content">
+            <h1>Welcome to SPD</h1>
+            <h5>[Spam message Detection]</h5>
+            <p>This is online platform where you can check any text either it is spam message or not 
+            </p>
+<p>just enter the text and see your messgae is spam or not </p>
+<p> After processing save your Result</p>
+        </div>
+       <!--End text part-->
+
+       <!--Form section start-->
+       <div class=" p-5 m-auto form content">
+        <form class="main-form" action="check" method="post">
+            {% csrf_token %}
+            <textarea name="Kewal" id="rawdata" placeholder="Enter Text here.."></textarea>
+            <div class="algo-choice">
+                <label class="radioconatiner">
+                    algo-1
+                    <input type="radio" name="algo" value="algo-1">
+                    <spam class="checkmarks"></spam>
+                </label>
+                <label class="radioconatiner">
+                    algo-2
+                    <input type="radio" name="algo" value="algo-2">
+                    <spam class="checkmarks"></spam>
+                </label>
+                <label class="radioconatiner">
+                    algo-3 
+                    <input type="radio" name="algo" value="algo-3">
+                    <spam class="checkmarks"></spam>
+                </label>
+            </div>
+            <div class="check-holder">
+                <button class="check-btn" type="submit">Check</button>
+            </div>
+        </form>
+       </div>
+
+       <!--form section end-->
+    </div>
+    <div class="footer">
+        <p>Copyright &copy; 2025 Develp by <b>KewalVora</b></p>
+    </div>
+</div>
+<!--Main end-->
+          
+    </section>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+  </body>
+  </html>
