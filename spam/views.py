@@ -3,7 +3,6 @@ from django.http import HttpResponse
 import joblib
 import os
 
-# Load models
 BASE_DIR = os.path.dirname(__file__)
 model1 = joblib.load(os.path.join(BASE_DIR, "myModel1.pkl"))
 model2 = joblib.load(os.path.join(BASE_DIR, "mySVCModel.pkl"))
@@ -11,12 +10,12 @@ model2 = joblib.load(os.path.join(BASE_DIR, "mySVCModel.pkl"))
 def index(request):
     return render(request, 'index.html')
 
+
 def checkspam(request):
     if request.method == "POST":
         algo = request.POST.get("algo")
         rawData = request.POST.get("rawData")
         finalAns = ""
-
 
         print(f"Selected Algo: {algo}")
         print(f"Input Data: {rawData}")

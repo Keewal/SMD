@@ -20,7 +20,7 @@ from django.urls import path
 from .import views
 
 urlpatterns = [
-    path('',views.index, name="Index"),
-    path('check', views.checkspam, name = "checkspam"),
+    path('',views.index, name="checkspam"),
+    path('check/', views.checkspam, name = "checkspam"),
 ]
   
